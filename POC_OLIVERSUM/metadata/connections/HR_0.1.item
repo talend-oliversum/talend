@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DatabaseConnection AdditionalParams="" DatabaseType="Oracle with service name" DatasourceName="" DbmsId="oracle_id" DriverClass="oracle.jdbc.OracleDriver" FileFieldName="" NullChar="" Password="enc:system.encryption.key.v1:0qoJybVHpnI4ZVUhv6UX5lEKcOq9h6d1U6xzHQGEH6oqDA==" Port="1521" ProductId="ORACLE" SID="freepdb1" SQLMode="false" ServerName="10.0.2.8" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=10.0.2.8)(port=1521))(connect_data=(service_name=freepdb1)))" UiSchema="HR" Username="hr" dataPackage="_GK7t4ArAEe6oVK26M6_Qrw" dbVersionString="ORACLE_18" id="_7AE_AAq_Ee6oVK26M6_Qrw" label="HR" name="HR" supportNLS="false" xmi:id="_GJKzUArAEe6oVK26M6_Qrw">
+    <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_GJMBcArAEe6oVK26M6_Qrw"/>
+    <taggedValue tag="package filter" value="" xmi:id="_GJpUcArAEe6oVK26M6_Qrw"/>
+    <taggedValue tag="Status" value="" xmi:id="_GJxQQArAEe6oVK26M6_Qrw"/>
+    <taggedValue tag="Version" value="0.1" xmi:id="_GJxQQQrAEe6oVK26M6_Qrw"/>
+    <taggedValue tag="Purpose" value="" xmi:id="_GJxQQgrAEe6oVK26M6_Qrw"/>
+    <taggedValue tag="Description" value="" xmi:id="_GJxQQwrAEe6oVK26M6_Qrw"/>
+    <taggedValue tag="Author" value="" xmi:id="_GJxQRArAEe6oVK26M6_Qrw"/>
+    <taggedValue tag="otherParameter" xmi:id="_GJxQRQrAEe6oVK26M6_Qrw"/>
+    <taggedValue tag="DB ProductName" value="Oracle" xmi:id="_GKPKUArAEe6oVK26M6_Qrw"/>
+    <taggedValue tag="DB ProductVersion" value="Oracle Database 23c Free, Release 23.0.0.0.0 - Developer-Release&#10;Version 23.2.0.0.0" xmi:id="_GKPKUQrAEe6oVK26M6_Qrw"/>
+    <taggedValue tag="DB IdentifierQuoteString" value="&quot;" xmi:id="_GKPKUgrAEe6oVK26M6_Qrw"/>
+    <parameters key="CONN_PARA_KEY_USERNAME" value="hr" xmi:id="_GJMBcQrAEe6oVK26M6_Qrw"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema dataManager="_GJKzUArAEe6oVK26M6_Qrw" name="HR" xmi:id="_GK7t4ArAEe6oVK26M6_Qrw">
+    <ownedElement comment="employees table. Contains 107 rows. References with departments,&#10;jobs, job_history tables. Contains a self reference." id="_M765gArAEe6oVK26M6_Qrw" label="EMPLOYEES" name="EMPLOYEES" tableType="TABLE" xmi:id="_M77gkArAEe6oVK26M6_Qrw" xsi:type="relational:TdTable">
+      <taggedValue tag="Comment" value="employees table. Contains 107 rows. References with departments,&#10;jobs, job_history tables. Contains a self reference." xmi:id="_M77gkQrAEe6oVK26M6_Qrw"/>
+      <feature comment="Primary key of employees table." key="true" label="EMPLOYEE_ID" length="6" name="EMPLOYEE_ID" nullable="false" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_M77gkgrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Primary key of employees table." xmi:id="_M77gkwrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77glArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" numericPrecisionRadix="10" xmi:id="_M77glQrAEe6oVK26M6_Qrw"/>
+      </feature>
+      <feature comment="First name of the employee. A not null column." label="FIRST_NAME" length="20" name="FIRST_NAME" sourceType="VARCHAR2" talendType="id_String" xmi:id="_M77glgrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="First name of the employee. A not null column." xmi:id="_M77glwrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77gmArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_M77gmQrAEe6oVK26M6_Qrw"/>
+      </feature>
+      <feature comment="Last name of the employee. A not null column." label="LAST_NAME" length="25" name="LAST_NAME" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_M77gmgrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Last name of the employee. A not null column." xmi:id="_M77gmwrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77gnArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_M77gnQrAEe6oVK26M6_Qrw"/>
+      </feature>
+      <feature comment="Email id of the employee" label="EMAIL" length="25" name="EMAIL" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_M77gngrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Email id of the employee" xmi:id="_M77gnwrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77goArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_M77goQrAEe6oVK26M6_Qrw"/>
+      </feature>
+      <feature comment="Phone number of the employee; includes country code and area code" label="PHONE_NUMBER" length="20" name="PHONE_NUMBER" sourceType="VARCHAR2" talendType="id_String" xmi:id="_M77gogrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Phone number of the employee; includes country code and area code" xmi:id="_M77gowrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77gpArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_M77gpQrAEe6oVK26M6_Qrw"/>
+      </feature>
+      <feature comment="Date when the employee started on this job. A not null column." label="HIRE_DATE" length="7" name="HIRE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" sourceType="DATE" talendType="id_Date" xmi:id="_M77gpgrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Date when the employee started on this job. A not null column." xmi:id="_M77gpwrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77gqArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="93" name="DATE" numericPrecisionRadix="10" xmi:id="_M77gqQrAEe6oVK26M6_Qrw"/>
+      </feature>
+      <feature comment="Current job of the employee; foreign key to job_id column of the&#10;jobs table. A not null column." label="JOB_ID" length="10" name="JOB_ID" nullable="false" sourceType="VARCHAR2" talendType="id_String" xmi:id="_M77gqgrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Current job of the employee; foreign key to job_id column of the&#10;jobs table. A not null column." xmi:id="_M77gqwrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77grArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="12" name="VARCHAR2" numericPrecisionRadix="10" xmi:id="_M77grQrAEe6oVK26M6_Qrw"/>
+      </feature>
+      <feature comment="Monthly salary of the employee. Must be greater&#10;than zero (enforced by constraint emp_salary_min)" label="SALARY" length="8" name="SALARY" precision="2" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_M77grgrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Monthly salary of the employee. Must be greater&#10;than zero (enforced by constraint emp_salary_min)" xmi:id="_M77grwrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77gsArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecision="2" numericPrecisionRadix="10" xmi:id="_M77gsQrAEe6oVK26M6_Qrw"/>
+      </feature>
+      <feature comment="Commission percentage of the employee; Only employees in sales&#10;department elgible for commission percentage" label="COMMISSION_PCT" length="2" name="COMMISSION_PCT" precision="2" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_M77gsgrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Commission percentage of the employee; Only employees in sales&#10;department elgible for commission percentage" xmi:id="_M77gswrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77gtArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecision="2" numericPrecisionRadix="10" xmi:id="_M77gtQrAEe6oVK26M6_Qrw"/>
+      </feature>
+      <feature comment="Manager id of the employee; has same domain as manager_id in&#10;departments table. Foreign key to employee_id column of employees table.&#10;(useful for reflexive joins and CONNECT BY query)" label="MANAGER_ID" length="6" name="MANAGER_ID" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_M77gtgrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Manager id of the employee; has same domain as manager_id in&#10;departments table. Foreign key to employee_id column of employees table.&#10;(useful for reflexive joins and CONNECT BY query)" xmi:id="_M77gtwrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77guArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_M77guQrAEe6oVK26M6_Qrw"/>
+      </feature>
+      <feature comment="Department id where employee works; foreign key to department_id&#10;column of the departments table" label="DEPARTMENT_ID" length="4" name="DEPARTMENT_ID" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_M77gugrAEe6oVK26M6_Qrw" xsi:type="relational:TdColumn">
+        <taggedValue tag="Comment" value="Department id where employee works; foreign key to department_id&#10;column of the departments table" xmi:id="_M77guwrAEe6oVK26M6_Qrw"/>
+        <initialValue language="COLUMN_DEF" xmi:id="_M77gvArAEe6oVK26M6_Qrw" xsi:type="relational:TdExpression"/>
+        <sqlDataType javaDataType="2" name="NUMBER" nullable="columnNullable" numericPrecisionRadix="10" xmi:id="_M77gvQrAEe6oVK26M6_Qrw"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_29f7da69-510d-4890-bf74-699ba5ed836f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vPq0J/uxwTnNbj3t1F9pEYc91fiaYgxcqOJCK60m3pmZ+pXLYsAkG0WN5Wg9MD2iJt/oJvg57/vr&#13;
+DDwvtipl6Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_40281887-fdea-47b0-bf32-d42ca50f57ce"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nOYXbrO73Izen5su+6XYhOHSbZEV9vZTGi0kzUxUKbnPKZFG1Si1fEy4qwhsarg86Qhn4iINBuqJ&#13;
+cctI68PchA==</DigestValue></Reference></SignedInfo><SignatureValue>Z+xHIqC/03ZK2FdqvX2HylcrPqu17fbAAbKlYgED1F/TakxNLSo2rhwKCvdE6cEXDsnp9UUBj6nG&#13;
+zl7vhKUiJyGBClo9lYtdtkXsJMy5uL57VaL0zlMC9nbdqzK3kTB52PXvwPVlO6McxljaR5Cwcg9I&#13;
+xKckQeph0foPQOVaVodIig1XWeNiow5SmuShLnreNKDqOA9iaD9E4WF4+jW0kjvOYztxR3CBeoNL&#13;
+NNpB7F0gM8PeZnLA4nfH1QYHnNwup1xq2aytmj1vCAFdAmnEJVMIntwq+kWFS6xB7Uv8+s/x8cMQ&#13;
+yl4QXS1LloIF/Wtgk4VW6DMH4LGidm2Fs4rmXA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_40281887-fdea-47b0-bf32-d42ca50f57ce" Target="#_29f7da69-510d-4890-bf74-699ba5ed836f"><Timestamp>2023-06-14 14:31:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
