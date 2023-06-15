@@ -2,6 +2,8 @@
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -41,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Ufq6EhNlInZSK3ZYppzNtB9+CdjbsozzYeoZu6DT"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:1/Xo5sz2oo9D60qYPN2eHPThiNAgMDmvoLSEZ/cE"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -76,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:6tIwMWMHnTqJYPz3UAb+TicSP2dAswBuhoYDt4RE"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:f9Oq8dU1ZosQm7j7TcT1MPpfwooEFmqydg/APnK8"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -106,13 +108,166 @@
     <routinesParameter id="_bSLC0Aq_Ee6oVK26M6_Qrw" name="TalendString"/>
     <routinesParameter id="_bSOGIAq_Ee6oVK26M6_Qrw" name="TalendStringUtil"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1ed33ecb-f6c7-4cb2-89a8-bc49813963c5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XvR+6mCLUpahzlyqUSx494+Qxzi0ucx0T9I6SEJCDng6yRhAql4xv4Ys9GOgh5IaPDV1vhC3f9eZ&#13;
-k8lBq4jSsw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b5c47661-0522-4643-852b-235118a4464f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>M2MSwxVGSlkdK+LCWUEEMYWpVZPhhbeg1sT9QkBLVODcMku9jQZgT7+FdJyHIHY0QcyDwBhGJa8D&#13;
-PkJfph7juw==</DigestValue></Reference></SignedInfo><SignatureValue>VeFzZb7skrHmuPxKTo/HY1a3727rCAkodrbqNZ+rt06+87hdxUc3pb2zFiWzVY3Vq+U10edcI0iV&#13;
-3/8LyF0gkhsiqhusMutic2dGLtMXJInv5sHgMabeVX9jbEEyXnkD0w47lgfqmXMez4t/TYyBwxS0&#13;
-cjsB84HVi85ktS53tEGv3mNBLFtggCZ1J1OMKYDBw2oU4x4xaNm3Z93LiUQrXO98sQkR/12kF/+h&#13;
-TdwgO4baOmc16SuRdCrWujSmABZ0BRwC/cXXczWRhLIR2oIHy1v8rrBKpkouvtfN+I1Yy8Q0v/Tg&#13;
-7sBz/27wd4xzJRlFRyTbzptImVvIJaAYbhP8zg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7AE_AAq_Ee6oVK26M6_Qrw"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;10.0.2.8&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.0.2.8&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;freepdb1&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;freepdb1&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;HR&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;hr&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oqYzTSxNy+GMB2Q43Iq2L3Azbdmu5bThfEf9Z08PbNcRxR0J"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_7AE_AAq_Ee6oVK26M6_Qrw - EMPLOYEES"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;EMPLOYEES&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  HR.EMPLOYEES.EMPLOYEE_ID, &#10;  HR.EMPLOYEES.FIRST_NAME, &#10;  HR.EMPLOYEES.LAST_NAME, &#10;  HR.EMPLOYEES.EMAIL, &#10;  HR.EMPLOYEES.PHONE_NUMBER, &#10;  HR.EMPLOYEES.HIRE_DATE, &#10;  HR.EMPLOYEES.JOB_ID, &#10;  HR.EMPLOYEES.SALARY, &#10;  HR.EMPLOYEES.COMMISSION_PCT, &#10;  HR.EMPLOYEES.MANAGER_ID, &#10;  HR.EMPLOYEES.DEPARTMENT_ID&#10;FROM HR.EMPLOYEES&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMPLOYEE_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIRST_NAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LAST_NAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMAIL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHONE_NUMBER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HIRE_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JOB_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SALARY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMMISSION_PCT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MANAGER_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPARTMENT_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="EMPLOYEES" name="tDBInput_1">
+      <column comment="Primary key of employees table." key="true" length="6" name="EMPLOYEE_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key of employees table."/>
+      </column>
+      <column comment="First name of the employee. A not null column." key="false" length="20" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="First name of the employee. A not null column."/>
+      </column>
+      <column comment="Last name of the employee. A not null column." key="false" length="25" name="LAST_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Last name of the employee. A not null column."/>
+      </column>
+      <column comment="Email id of the employee" key="false" length="25" name="EMAIL" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Email id of the employee"/>
+      </column>
+      <column comment="Phone number of the employee; includes country code and area code" key="false" length="20" name="PHONE_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Phone number of the employee; includes country code and area code"/>
+      </column>
+      <column comment="Date when the employee started on this job. A not null column." key="false" length="7" name="HIRE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date when the employee started on this job. A not null column."/>
+      </column>
+      <column comment="Current job of the employee; foreign key to job_id column of the&#10;jobs table. A not null column." key="false" length="10" name="JOB_ID" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Current job of the employee; foreign key to job_id column of the&#10;jobs table. A not null column."/>
+      </column>
+      <column comment="Monthly salary of the employee. Must be greater&#10;than zero (enforced by constraint emp_salary_min)" key="false" length="8" name="SALARY" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Monthly salary of the employee. Must be greater&#10;than zero (enforced by constraint emp_salary_min)"/>
+      </column>
+      <column comment="Commission percentage of the employee; Only employees in sales&#10;department elgible for commission percentage" key="false" length="2" name="COMMISSION_PCT" nullable="true" pattern="" precision="2" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Commission percentage of the employee; Only employees in sales&#10;department elgible for commission percentage"/>
+      </column>
+      <column comment="Manager id of the employee; has same domain as manager_id in&#10;departments table. Foreign key to employee_id column of employees table.&#10;(useful for reflexive joins and CONNECT BY query)" key="false" length="6" name="MANAGER_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Manager id of the employee; has same domain as manager_id in&#10;departments table. Foreign key to employee_id column of employees table.&#10;(useful for reflexive joins and CONNECT BY query)"/>
+      </column>
+      <column comment="Department id where employee works; foreign key to department_id&#10;column of the departments table" key="false" length="4" name="DEPARTMENT_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Department id where employee works; foreign key to department_id&#10;column of the departments table"/>
+      </column>
+      <additionalProperties key="Comment" value="employees table. Contains 107 rows. References with departments,&#10;jobs, job_history tables. Contains a self reference."/>
+    </metadata>
+  </node>
+  <node componentName="tFilterColumns" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFilterColumns_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="EMPLOYEES" name="tFilterColumns_1">
+      <column comment="Primary key of employees table." key="true" length="6" name="EMPLOYEE_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key of employees table."/>
+      </column>
+      <column comment="First name of the employee. A not null column." key="false" length="20" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="First name of the employee. A not null column."/>
+      </column>
+      <column comment="Last name of the employee. A not null column." key="false" length="25" name="LAST_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Last name of the employee. A not null column."/>
+      </column>
+      <additionalProperties key="Comment" value="employees table. Contains 107 rows. References with departments,&#10;jobs, job_history tables. Contains a self reference."/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputJSON" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputJSON_1"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/tmp/Employees.json&quot;"/>
+    <elementParameter field="CHECK" name="GENERATE_JSON_ARRAY" value="false"/>
+    <elementParameter field="TEXT" name="DATABLOCKNAME" value="&quot;data&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="EMPLOYEES" name="tFileOutputJSON_1">
+      <column comment="Primary key of employees table." key="true" length="6" name="EMPLOYEE_ID" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key of employees table."/>
+      </column>
+      <column comment="First name of the employee. A not null column." key="false" length="20" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="First name of the employee. A not null column."/>
+      </column>
+      <column comment="Last name of the employee. A not null column." key="false" length="25" name="LAST_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Last name of the employee. A not null column."/>
+      </column>
+      <additionalProperties key="Comment" value="employees table. Contains 107 rows. References with departments,&#10;jobs, job_history tables. Contains a self reference."/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tFilterColumns_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFilterColumns_1" offsetLabelX="0" offsetLabelY="0" source="tFilterColumns_1" target="tFileOutputJSON_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_94576d30-59f6-40af-b716-fe9d627542b3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qTZRx9PXMlSdDyj0LERGfZo694pC9Zg6k8OHsO65TOkh/yxRUKJsAoHYQlEc02nJFc5XmJwq97gC&#13;
+sOPWMccokg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dce8baa1-4cbb-4e1f-9cc5-698e2e23a28d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LLI5tlpuVTnTwk6dtVpffz/3RM05gfPJl8iTJ1GPyFycmhIy+dLPrfHwDYrBMKaL2ET158sgWbWR&#13;
+utdfSLS17A==</DigestValue></Reference></SignedInfo><SignatureValue>RbiFiNR6l8/gm8/LC34FJ+83ZV/lRmx8iimayyoQ0yCHKMn2OPTZ35VOv2EclcvbvqGtHkvV8zdh&#13;
++o2MN1F53Jk6ZCGQG3OKHDLpWxs7eolsOVTbFhAtIaV9GWH4EO3fzdkMMXd97MB8F2+NSUWXNQT3&#13;
+2RMBaueUTO4WjX8S9+mR5eWXRnbWhpMPU7Lz9VAa2LOPQkb6YW+HRyezAIJBrCbLqsqSdkDdiQv9&#13;
+zCm79krV28FdmITnCNrgi7iGRjtGg8EX5Hp4TPhn9gJX+Zy7QN41vIpIbXrkb8dcKlCfrpyeWvEO&#13;
+wuC9+z07EnNZEFdAVou2l60Rwf2XHQ7qzztR0g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -134,4 +289,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b5c47661-0522-4643-852b-235118a4464f" Target="#_1ed33ecb-f6c7-4cb2-89a8-bc49813963c5"><Timestamp>2023-06-14 14:29:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dce8baa1-4cbb-4e1f-9cc5-698e2e23a28d" Target="#_94576d30-59f6-40af-b716-fe9d627542b3"><Timestamp>2023-06-15 06:29:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
